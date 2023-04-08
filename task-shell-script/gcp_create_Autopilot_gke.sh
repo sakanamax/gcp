@@ -28,3 +28,14 @@ echo ""
 echo "建立 Autopilot GKE cluster"
 echo "大概需要 5 - 10 分鐘建立"
 gcloud container clusters create-auto $cluster_name   --region $region_name --project $project_name
+echo ""
+
+# 詢問是否要下載 GKE Credentials
+echo ""
+read -e -p "是否要下載 GKE Credentials? : " -i "no" get_credential
+echo ""
+[ $get_credential == yes ] && gcloud container clusters get-credentials $cluster_name --region $region_name --project $project_name
+echo ""
+
+
+

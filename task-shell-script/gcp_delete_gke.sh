@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# edit by sakana 2023/4/5
+# edit by sakana 2023/4/8
 # 刪除 GKE cluster
 # https://cloud.google.com/sdk/gcloud/reference/container/clusters/delete
 
@@ -26,5 +26,5 @@ echo ""
 # 刪除 GKE cluster
 echo ""
 echo "刪除 GKE clusterr"
-echo "大概需要 5 - 10 分鐘建立"
+echo "大概需要 5 - 10 分鐘刪除"
 gcloud container clusters delete $cluster_name   --region $region_name --project $project_name
