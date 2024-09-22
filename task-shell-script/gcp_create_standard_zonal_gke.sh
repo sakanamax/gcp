@@ -42,7 +42,7 @@ echo ""
 echo ""
 echo "設定 GKE 版本"
 echo ""
-read -e -p "Please enter GKE version: " -i "1.28" gke_version
+read -e -p "Please enter GKE version: " -i "1.29" gke_version
 echo ""
 
 # 列出可用 machine type
