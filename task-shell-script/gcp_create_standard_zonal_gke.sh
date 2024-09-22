@@ -28,7 +28,7 @@ echo ""
 echo ""
 echo "顯示目前可用 GKE 版本"
 echo ""
-gcloud container get-server-config  --project $project_name --format json | jq '.channels'
+gcloud container get-server-config  --project $project_name --zone $zone_name --format json | jq '.channels'
 echo ""
 
 # 設定 Release Channel
