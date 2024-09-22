@@ -56,7 +56,7 @@ echo ""
 echo ""
 echo "設定 machine type"
 echo ""
-read -e -p "Please enter machine type: " -i "n1-standard-1" machine_type
+read -e -p "Please enter machine type: " -i "n2-standard-2" machine_type
 echo ""
 
 # 設定 node 數量
